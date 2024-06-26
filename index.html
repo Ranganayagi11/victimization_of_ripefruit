@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Fruit Ripeness Detection</title>
+        <style>
+            body{
+                background-image:url('b.jpg');
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1 style="color: rgba(250, 4, 4, 0.726);text-align: center;">Fruit Ripeness Detection using Python Flask and ML</h1>
+
+        <form action="http://localhost:5000/predict" method="POST" enctype="multipart/form-data">
+            <label for="upload">To Upload</label>
+            <input type="file" name="file"/>
+            <input type="submit" value="Predict Ripeness"/>
+            
+        </form>
+    </body>
+</html>
